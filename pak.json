@@ -1,0 +1,13 @@
+{
+  "name": "MAME2003PLUS",
+  "type": "EMU",
+  "description": "Runs MAME 2003 Plus under minarch for MinUI",
+  "author": "josegonzalez",
+  "repo_url": "https://github.com/josegonzalez/minui-mame2003plus-pak",
+  "release_filename": "MAME2003PLUS.pak.zip",
+  "platforms": [
+    "tg5040"
+  ],
+  "launch": "launch.sh",
+  "version": ""
+}
