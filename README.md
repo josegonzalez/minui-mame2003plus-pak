@@ -1,6 +1,6 @@
 # minui-mame2003plus-pak
 
-A MinUI Emu Pak for MAME 2003 Plus, wrapping the [retroarch core from christianhaitian](https://github.com/christianhaitian/retroarch-cores/blob/aa00b6b187d87a7babf546fa8ec99f89cba81ff4/aarch64/mame2003_plus_libretro.so.zip).
+A MinUI Emu Pak for MAME 2003 Plus, wrapping the [retroarch core from christianhaitian](https://github.com/christianhaitian/retroarch-cores/blob/master/aarch64/mame2003_plus_libretro.so.zip).
 
 ## Requirements
 

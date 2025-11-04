@@ -9,16 +9,17 @@ ARCHITECTURES := arm arm64
 PLATFORMS := my355 tg5040
 
 CORE_VERSION := aa00b6b187d87a7babf546fa8ec99f89cba81ff4
+CORE_NAME := mame2003_plus_libretro.so
 
 clean:
-	rm -f mame2003_plus_libretro.so || true
+	rm -f $(CORE_NAME) || true
 
-build: mame2003_plus_libretro.so
+build: $(CORE_NAME)
 
-mame2003_plus_libretro.so:
-	curl -f -o mame2003_plus_libretro.so.zip -sSL "https://github.com/christianhaitian/retroarch-cores/raw/$(CORE_VERSION)/aarch64/mame2003_plus_libretro.so.zip"
-	unzip mame2003_plus_libretro.so.zip
-	rm -f mame2003_plus_libretro.so.zip
+$(CORE_NAME):
+	curl -f -o $(CORE_NAME).zip -sSL "https://github.com/christianhaitian/retroarch-cores/raw/$(CORE_VERSION)/aarch64/$(CORE_NAME).zip"
+	unzip $(CORE_NAME).zip
+	rm -f $(CORE_NAME).zip
 
 release: build
 	mkdir -p dist
